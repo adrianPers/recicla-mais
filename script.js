@@ -1,4 +1,4 @@
-const btnsMenu = [...document.querySelectorAll('#menu > .material-symbols-outlined')]
+const btnsMenu = [...document.querySelectorAll('#menu  .material-symbols-outlined')]
 const section01 = document.getElementById('box-notis')
 
 btnsMenu.map((el, indice) => {
@@ -64,4 +64,21 @@ for (let i = 0; i <= 10; i++) {
             document.querySelectorAll('#menu span')[0].classList.remove('novo')
         }
     })
+})
+
+
+let mostarOpcionais = false
+
+document.getElementById(
+    'btn-ver-mais'
+).addEventListener('click', () => {
+
+    [...document.getElementsByClassName(
+        'opcionais'
+    )].map(
+        el => el.style.display = 
+        mostarOpcionais ? 'none' : 'block'
+    )
+
+    mostarOpcionais = !mostarOpcionais
 })

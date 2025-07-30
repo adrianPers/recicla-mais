@@ -1,11 +1,12 @@
 section{
     width: 20%;
     height: 100%;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     display: flex;
     flex-direction: column;
     padding: 10px;
     overflow: scroll;
+    gap: 10px;
 }
 
 section::-webkit-scrollbar {
@@ -15,7 +16,7 @@ section::-webkit-scrollbar {
 /* Section Notificações */
 
 #box-notis{
-    margin-left: -0%;
+    margin-left: -40%;
     padding: 0px;
 }
 
@@ -136,20 +137,50 @@ section::-webkit-scrollbar {
 .cards span{
     font-size: 40px;
     color: rgb(32, 102, 47);
+  
 }
 
-#mapa{
-    height: 300px;
-    width: 100%;
+/* section Ecopontos */
+
+#box-local{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
 }
+
+#box-local h2{
+    margin-block: 10px;
+}
+
 
 .ecopontos{
-    background-color: rgb(154, 224, 186);
+    background-color: rgb(103, 197, 90);
     border-radius: 10px;
     padding: 10px;
     margin-block: 5px;
 }
 
+.opcionais{
+    display: none;
+    transition: 0.5s;
+}
+
+#btn-ver-mais{
+    background-color: transparent;
+    /* background-color: red; */
+    border: 0px;
+    font-size: 20px;
+    color: rgb(76, 76, 212);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#mapa{
+    height:50%;
+    width: 100%;
+    border: 0px;
+    border-radius: 10px;
+}
 
 .box-icon-conta{
     display: flex;
@@ -162,13 +193,27 @@ section::-webkit-scrollbar {
     font-size: 60px;
 }
 
-
 /* Section Home */
+
+#box-home{
+    overflow: visible;
+    /* background-color: red; */
+}
+
+#box-intro {
+    border-radius: 10px;
+    height: 400px;
+    background-color: red;
+}
+
+#box-intro img {
+    width: 100%;
+}
 
 #box-galeria-home{
     display: flex;
     width: 100%;
-    height: 40%;
+    height: 400px;
     overflow-x: scroll;
     padding: 10px;
     gap: 10px;
@@ -176,4 +221,29 @@ section::-webkit-scrollbar {
 
 #box-galeria-home img{
     border-radius: 10px;
+}
+
+#box-funcoes{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+}
+
+#box-funcoes button{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: auto;
+    border: 0px;
+}
+
+#box-funcoes .material-symbols-outlined{
+    background-color: rgb(119, 216, 117);
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
 }
