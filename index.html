@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style-global.css">
     <link rel="stylesheet" href="style-section.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_circle,arrow_forward_ios,attach_money,check_box,filter_alt,home,location_on,logout,notifications,payments,savings,settings,shopping_bag,support_agent" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_circle,arrow_forward_ios,attach_money,check_box,filter_alt,home,location_on,logout,notifications,payments,savings,settings,shopping_bag,shoppingmode,support_agent" />
 
 </head>
 
@@ -46,16 +46,18 @@
                 </section>
 
                 <section id="box-renda">
-                    <h2>Seu rendimento</h2>
+                    <h2 class="title">Seu progresso</h2>
                     <div>
 
                         <p>este mês</p>
-                        <h3>R$ 234,56</h3>
+                        <h3 class="pontos">240 pontos</h3>
                     </div>
 
-                    <div>
-                        <p>Meta</p>
-                        <div id="box-meta">
+                    <div id="box-meta">
+                        <p>
+                            <span>Meta</span><span>300 pts</span>
+                        </p>
+                        <div id="meta">
                             <div></div>
                         </div>
                     </div>
@@ -77,6 +79,19 @@
                             </span>
                         </div>
                     </div>
+
+                    <h3 class="title">Conheça as  empresas parceiras</h3>
+
+                    <div class="box-empresa">
+                        <img src="img/logo-oboticario.png">
+                        <p>Converta seus pontos na OBoticário!</p>
+                    </div>
+                     <div class="box-empresa">
+                        <img src="img/logo-ml.png">
+                        <p>O Mercado Livre também é verde!</p>
+                    </div>
+
+                    <button id="btn-converter-pts">Converter pontos</button>
 
                     <div>
                         <p>Gráficos</p>
@@ -204,11 +219,9 @@
                 <section id="box-conta">
 
                     <div class="box-icon-conta">
-                        <span class="material-symbols-outlined">
-                            account_circle
-                        </span>
-                        <h3>usuário de tal</h3>
-                        <p>usuario.de.tal@email.com</p>
+                       <img src="./img/user.png" alt="imagem do usuario">
+                        <h3>Reggie Franklin</h3>
+                        <p>trem.bala@email.com</p>
                     </div>
 
                     <div id="box-info-conta">
@@ -235,13 +248,13 @@
                              </span>
                         </p>
                           <p class="box-between">
-                            Editar Perfil
+                            Premium
                              <span class="material-symbols-outlined">
                                 arrow_forward_ios
                              </span>
                         </p>
                         <p class="box-between">
-                            Termos de Uso
+                            Sobre o aplicativo
                            <span class="material-symbols-outlined">
                                 arrow_forward_ios
                              </span>
@@ -274,7 +287,7 @@
 
             <button>
                 <span class="material-symbols-outlined">
-                    attach_money
+                    shoppingmode
                 </span>
             </button>
 

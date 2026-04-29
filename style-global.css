@@ -80,13 +80,16 @@ main{
     background-color: transparent;
     border-radius: 50%;
     border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #menu .material-symbols-outlined{
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(100, 214, 34);
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
     transition: 0.5s;
     cursor: pointer;
     position: relative;
